@@ -1,9 +1,11 @@
 body {
+    background-image: url("../images/background.jpg");
+    background-size: 100%;
     display: flex;
     justify-content: center;
     align-items: center;    
     min-height: 100vh;
-    background: rgb(148, 185, 209);
+    
     user-select: none;
 }
 
@@ -16,8 +18,8 @@ body {
     gap: 30px;
     background: linear-gradient(
         325deg, #03001e 0%,
-        #7303c0 30%,
-        #ec38bc 70%,
+        #c0033c 30%,
+        #ec3850 70%,
         #fdeff9 100%
     );
     padding: 40px 60px
@@ -28,9 +30,22 @@ h2 {
     color: white;
     text-transform: uppercase;
     letter-spacing: 0.1em;
+    text-shadow: 1px 1px 2px black;
 }
 
-.reset {
+h3 {
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reset,
+#startPauseBtn {
     padding: 15px 20px;
     width: 100%;
     color: black;
@@ -44,7 +59,12 @@ h2 {
 }
 
 .reset:focus {
-    color: #ec38bc;
+    color: #ec3856;
+    background-color: #262809;
+}
+
+#startPauseBtn:active {
+    color: #ec3856;
     background-color: #262809;
 }
 
@@ -89,4 +109,5 @@ h2 {
 .boxOpen::after,
 .boxMatch::after {
     transform: rotateY(180deg);
+
 }
