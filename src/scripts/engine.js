@@ -1,12 +1,14 @@
 let gameStatus = false;
 let loadTimer;
 let timeleft;
+let gameStarted = false;
 
 //GAME START/PAUSE BUTTON
 
 function startPauseGame() {
   document.getElementById("startPauseBtn").onclick = () => {
     if (!gameStatus) {
+      gameStarted = true;
       timeleft = timeleft || 30;
       startTimer();
       updateButton();
@@ -67,7 +69,7 @@ function init() {
   let openCards = [];
 
   function handleClick() {
-    if (openCards.length < 2) {
+    if (gameStarted && openCards.length < 2) {
       this.classList.add("boxOpen");
       openCards.push(this);
     }
