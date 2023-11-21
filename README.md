@@ -43,13 +43,13 @@ O Jogo da Memória de Emojis é um jogo web simples projetado para testar a mem�
 ## **Estrutura do Projeto**  
 O projeto consiste em três arquivos principais: index.html, engine.js, e dois arquivos CSS (main.css e reset.css).  
   
-#**index.html:**  
+**index.html:**  
 Contém a estrutura básica da página web.  
 Inclui os elementos necessários para exibir o tabuleiro do jogo e a funcionalidade de reinício.  
-#**engine.js:**  
+**engine.js:**  
 Gerencia a lógica e interações do jogo usando JavaScript.  
 Define a matriz de emojis, funcionalidade de embaralhamento, manipulação de cliques, verificação de correspondência, tempo de jogo, começar/pausar e resetar jogo.  
-#**main.css e reset.css:**  
+**main.css e reset.css:**  
 Estilizam os elementos HTML para criar a interface visual do jogo.  
 Definem layout, animações e transições para o tabuleiro do jogo e botão de reinício.  
 
